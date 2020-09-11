@@ -1,0 +1,30 @@
+{
+  "name": "adam/rest-api-proj",
+  "type": "wordpress-plugin",
+  "version": "1.0.5",
+  "minimum-stability": "dev",
+  "description": "This plugin sends an HTTP request to a REST API endpoint and displays the JSON response on a table. ",
+  "homepage": "https://github.com/adamankeli",
+  "license": "GPL-3.0-or-later",
+  "authors":[ 
+    {
+      "name": "Adam Ankeli",
+      "email": "ankeliadam@gmail.com",
+      "homepage": "https://github.com/adamankeli"
+    }
+	],
+  "require": {
+    "php": ">=7.2.25",
+    "composer/installers": "v1.8.0"
+  },
+  "config"      : {
+        "vendor-dir": "wp-content/plugins/adamProj/vendor"
+    },
+  "extra"       : {
+        "installer-paths": {
+          "wp-content/plugins/{$name}/": [
+            "type:wordpress-plugin"
+          ]
+          }
+    }	
+}
